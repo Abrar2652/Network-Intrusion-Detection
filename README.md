@@ -31,11 +31,11 @@ The project follows a structured approach to build and evaluate network intrusio
 - **AutoML Feature Selection**: Techniques like TPOT are used to automatically select the best features.
 - **Hybrid Feature Selection**: Combines filter and embedded methods to select the most relevant features.
 - **Lasso and Tree-based Feature Selection**: Utilizes Lasso regression and tree-based models for feature importance.
+- **Recursive Feature Elimination (RFE)**: Ranks the features based on their importance, removes the least important feature(s), and repeats until the desired number of features is reached.
 
 ### 3. Model Training
 - **Ensemble Models**: Various ensemble models such as StackingClassifier and VotingClassifier are trained.
 - **Unsupervised Models**: Clustering techniques like K-Means and DBSCAN are used to add cluster features.
-- **Deep Learning Models**: Neural networks are employed for more complex pattern recognition.
 
 ### 4. Model Evaluation
 - **ROC Curves**: Receiver Operating Characteristic (ROC) curves are plotted to evaluate model performance.
