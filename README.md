@@ -1,6 +1,6 @@
 # Network Intrusion Detection
 
-This repository contains the implementation of a network intrusion detection system using ensemble learning and different feature selection techniques.
+This repository contains the implementation of a network intrusion detection system using state-of-the-art and hybrid GNNs.
 
 ## Datasets
 
@@ -20,31 +20,8 @@ The following datasets were used in this project:
 
 ## Approach
 
-The project follows a structured approach to build and evaluate network intrusion detection models:
+The project follows a structured approach to build and evaluate GNN-based network intrusion detection models:
 
-### 1. Data Preprocessing
-- **Data Loading**: The datasets are loaded and combined for comprehensive analysis.
-- **Feature Engineering**: Relevant features are selected, and categorical variables are encoded.
-- **Normalization**: Features are normalized to ensure consistent scaling.
-
-### 2. Feature Selection
-- **AutoML Feature Selection**: Techniques like TPOT are used to automatically select the best features.
-- **Hybrid Feature Selection**: Combines filter and embedded methods to select the most relevant features.
-- **Lasso and Tree-based Feature Selection**: Utilizes Lasso regression and tree-based models for feature importance.
-- **Recursive Feature Elimination (RFE)**: Ranks the features based on their importance, removes the least important feature(s), and repeats until the desired number of features is reached.
-
-### 3. Model Training
-- **Ensemble Models**: Various ensemble models such as StackingClassifier and VotingClassifier are trained.
-- **Unsupervised Models**: Clustering techniques like K-Means and DBSCAN are used to add cluster features.
-
-### 4. Model Evaluation
-- **ROC Curves**: Receiver Operating Characteristic (ROC) curves are plotted to evaluate model performance.
-- **Confusion Matrices**: Confusion matrices are used to visualize the performance of classification models.
-- **Classification Reports**: Detailed reports including precision, recall, and F1-score are generated.
-
-### 5. Visualization
-- **ROC Curves**: Multi-class ROC curves are plotted to assess the performance of the models.
-- **Confusion Matrices**: Normalized confusion matrices display the percentage of correct and incorrect predictions.
 
 ## Requirements
 
@@ -56,13 +33,9 @@ To run the code in this repository, you need the following Python libraries:
 - matplotlib
 - seaborn
 - xgboost
-- tpot
+- torch_geometric
+- torch 
 
-You can install the required libraries using pip:
-
-```bash
-pip install pandas numpy scikit-learn matplotlib seaborn xgboost h2o tpot
-```
 
 ## Usage
 
