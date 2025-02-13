@@ -20,7 +20,7 @@ The following datasets were used in this project:
 
 ## Approach
 
-The project follows a structured approach to build and evaluate GNN-based network intrusion detection models:
+The project follows a structured approach to build and evaluate GNN-based network intrusion detection models
 
 
 ## Requirements
